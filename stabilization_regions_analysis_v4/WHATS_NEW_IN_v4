@@ -1,0 +1,18 @@
+NEW IN stabilization_regions_analysis_v4
+-----------
+12/13/2012
+-----------
+-I have added the new hamming_across.py script, which will go into each parameter
+folder and find the cumulative hamming code of a specified line for the cumulative_output.txt files of all the seeds. This shows what cells are stabilized across all the seeds at that point, and which ones are still changing states.
+        *Please not when this script is run, it creates shell scripts
+        -hamming_across_script
+        -hamming_across_script2
+        -hamming_across_script3
+
+-I have updated the run_scripts.py script to add the hamming_across.py script. This is still run as normal. The hamming_across will run automatically on its own.
+
+-I added my clean_test script file. It just cleans out all the files produced from 
+my scripts (Or most of them). It is easy to specify what you want to delete or keep. 
+I use it for testing and figured it might be good just to keep with everything.
+
+-I updated the readme file to add the new scripts.

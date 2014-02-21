@@ -1,0 +1,26 @@
+#!/bin/bash
+#Clear test of all the calculated data.
+#********************************************************
+#FOR TEST PURPOSES. WILL DELETE COLLECTED DATA.
+#
+#Deletes file types png, csv, and pdf by default.
+#you can make it only for specific files by filling in the
+#name. By data from the model is contained in txt and xml 
+#files so don't select those extensions.
+#********************************************************
+
+find ~/Documents/Excel/test_data/ -type f -name "across_locations.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "file_locations.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "hamming_across_script1" -delete
+find ~/Documents/Excel/test_data/ -type f -name "hamming_across_script2" -delete
+find ~/Documents/Excel/test_data/ -type f -name "hamming_across_script3" -delete
+find ~/Documents/Excel/test_data/ -type f -name "StabilizationOverTime.r" -delete
+find ~/Documents/Excel/test_data/ -type f -name "StabilizationOverTimePlot.png" -delete
+find ~/Documents/Excel/test_data/ -type f -name "acrossData.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "cumulativeLocations.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "across_hamming_Cumulative.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "graph_data.csv" -delete
+find ~/Documents/Excel/test_data/ -type f -name "cumulative_output.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "discrete_log.txt" -delete
+find ~/Documents/Excel/test_data/ -type f -name "hamming_output.txt" -delete
+
